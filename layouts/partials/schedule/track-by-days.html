@@ -13,6 +13,12 @@
             <th>Friday    </th>
         </tr>
     </thead>
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-1" )}}
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-2" )}}
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-3" )}}
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-4" )}}
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-5" )}}
+    {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "TS-6" )}}
     {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "KN-1" )}}
     {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "KN-2" )}}
     {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "AM-1" )}}
@@ -23,10 +29,7 @@
     {{ partial "schedule/track-tr-time.html" (dict "self" .self "pages" .pages "time" "Eve-2" )}}
 </table>
 
-<h5>Sessions not mapped to an day and time </h5>
-<ul>
-    {{ partial "schedule/no-mappings-for-day.html" . }}
-</ul>
+{{ partial "schedule/no-mappings-for-day.html" . }}
 
 <hr/>
 
